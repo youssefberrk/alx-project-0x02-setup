@@ -22,12 +22,12 @@ const PostModal: React.FC<PostModalProps> = ({ isOpen, onClose, onSave }) => {
   return (
     <div className="fixed inset-0 bg-gray-800 bg-opacity-50 flex justify-center items-center">
       <div className="bg-white rounded-lg p-6 w-96">
-        <h2 className="text-xl font-bold mb-4">Create New Post</h2>
+        <h2 className="text-xl text-black font-bold mb-4">Create New Post</h2>
         <div className="mb-4">
-          <label className="block text-black-700 mb-1">Title</label>
+          <label className="block text-black -700 mb-1">Title</label>
           <input
             type="text"
-            className="w-full border border-gray-300 rounded p-2"
+            className="w-full border text-black border-gray-300 rounded p-2"
             value={title}
             onChange={(e) => setTitle(e.target.value)}
           />
