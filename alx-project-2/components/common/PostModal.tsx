@@ -24,7 +24,7 @@ const PostModal: React.FC<PostModalProps> = ({ isOpen, onClose, onSave }) => {
       <div className="bg-white rounded-lg p-6 w-96">
         <h2 className="text-xl font-bold mb-4">Create New Post</h2>
         <div className="mb-4">
-          <label className="block text-gray-700 mb-1">Title</label>
+          <label className="block text-black-700 mb-1">Title</label>
           <input
             type="text"
             className="w-full border border-gray-300 rounded p-2"
@@ -33,7 +33,7 @@ const PostModal: React.FC<PostModalProps> = ({ isOpen, onClose, onSave }) => {
           />
         </div>
         <div className="mb-4">
-          <label className="block text-gray-700 mb-1">Content</label>
+          <label className="block text-black-700 mb-1">Content</label>
           <textarea
             className="w-full border border-gray-300 rounded p-2"
             rows={4}
