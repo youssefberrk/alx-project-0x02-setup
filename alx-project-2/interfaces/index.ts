@@ -9,4 +9,9 @@ export interface CardProps {
     onClick?: () => void; // Optional onClick handler.
     className?: string; // Optional additional class names.
   }
+  export interface PostProps {
+    title: string;
+    content: string;
+    userId: number;
+  }
   
