@@ -1,17 +1,15 @@
-import Head from "next/head";
+import React from "react";
+import Button from "../components/common/Button";
 
 export default function AboutPage() {
   return (
-    <div>
-      <Head>
-        <title>About Page</title>
-      </Head>
-      <main className="p-6 text-center">
-        <h1 className="text-3xl font-bold">About Us</h1>
-        <p className="mt-4 text-gray-700">
-          This is the about page where we describe the project.
-        </p>
-      </main>
+    <div className="p-6 text-center">
+      <h1 className="text-3xl font-bold mb-6">About Us</h1>
+      <div className="space-y-4">
+        <Button label="Small Button" size="small" shape="rounded-sm" />
+        <Button label="Medium Button" size="medium" shape="rounded-md" />
+        <Button label="Large Button" size="large" shape="rounded-full" />
+      </div>
     </div>
   );
 }
