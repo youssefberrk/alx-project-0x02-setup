@@ -3,7 +3,7 @@ import UserCard from "../components/common/UserCard";
 import { UserProps } from "../interfaces";
 
 // Fetching data for static generation
-export const getStaticProps = async () => {
+const getStaticProps = async () => {
   const response = await fetch("https://jsonplaceholder.typicode.com/users");
   const users = await response.json();
 
@@ -13,6 +13,8 @@ export const getStaticProps = async () => {
     },
   };
 };
+
+export { getStaticProps };
 
 // UsersPage component that receives users as a prop
 const UsersPage: React.FC<{ users: UserProps[] }> = ({ users }) => {
