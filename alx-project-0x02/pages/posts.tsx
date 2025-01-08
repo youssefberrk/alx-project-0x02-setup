@@ -15,7 +15,11 @@ const PostsPage: React.FC = () => {
       const data = await response.json();
       setPosts(data);
     };
-    fetchPosts();
+    try {
+      fetchPosts();
+    } catch (error) {
+      console.error("Error fetching posts:", error);
+    }
   }, []);
   return (
     <div>
