@@ -1,9 +1,9 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import UserCard from "../components/common/UserCard";
 import { UserProps } from "../interfaces";
 
+// UsersPage component that receives users as a prop
 const UsersPage: React.FC<{ users: UserProps[] }> = ({ users }) => {
-
   return (
     <div className="p-6">
       <h1 className="text-3xl font-bold text-center mb-6">Users</h1>
@@ -21,7 +21,7 @@ const UsersPage: React.FC<{ users: UserProps[] }> = ({ users }) => {
   );
 };
 
-export default UsersPage;
+// Fetching data for static generation
 export const getStaticProps = async () => {
   const response = await fetch("https://jsonplaceholder.typicode.com/users");
   const users = await response.json();
