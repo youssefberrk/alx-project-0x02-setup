@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Head from "next/head";
-import Card from "../components/common/Card";
+import Card from "@/components/common/Card";
 import PostModal from "../components/common/PostModal";
 import Header from "../components/layout/Header";
 
