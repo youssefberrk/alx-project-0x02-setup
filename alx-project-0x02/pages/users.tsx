@@ -1,6 +1,6 @@
 import React from "react";
-import UserCard from "../components/common/UserCard";
-import { UserProps } from "../interfaces";
+import UserCard from "@/components/common/UserCard";
+import { UserProps } from "@/interfaces";
 
 // Fetching data for static generation
 const getStaticProps = async () => {
