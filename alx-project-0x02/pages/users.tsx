@@ -2,17 +2,16 @@ import React from "react";
 import UserCard from "../components/common/UserCard";
 import { UserProps } from "../interfaces";
 
-// Fetching data for static generation
-export function getStaticProps() {
-  return fetch("https://jsonplaceholder.typicode.com/users")
-    .then((response) => response.json())
-    .then((users) => {
-      return {
-        props: {
-          users,
-        },
-      };
-    });
+// Fetching data for static generation using async/await with regular function syntax
+export async function getStaticProps() {
+  const response = await fetch("https://jsonplaceholder.typicode.com/users");
+  const users = await response.json();
+
+  return {
+    props: {
+      users,
+    },
+  };
 }
 
 // UsersPage component that receives users as a prop
